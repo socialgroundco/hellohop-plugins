@@ -191,11 +191,11 @@ Authorization: Bearer <CHANNEL_TOKEN>
 ### The server
 
 The published stdio server is `hellohop-mcp`. The plugin pins
-`hellohop-mcp@0.3.3`. That release starts without credentials. Tools return
+`hellohop-mcp@0.3.4`. That release starts without credentials. Tools return
 `not_configured` with setup guidance until both `GATEWAY_API_TOKEN` and
 `GATEWAY_CHANNEL_ID` are set. Get a free sandbox token at https://hellohop.app,
 configure it locally and restart the agent. Never paste a token into chat.
-Number checks require an eligible account and a non-sandbox channel.
+Number checks require a non-sandbox channel.
 
 <!-- BEGIN GENERATED: mcp-tools (do not edit; run node tools/generate.mjs) -->
 

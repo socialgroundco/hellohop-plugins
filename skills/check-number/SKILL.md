@@ -7,9 +7,9 @@ disable-model-invocation: true
 
 # /hellohop:check-number
 
-The pinned published MCP release does not yet include this tool. If it is
-missing, stop and say the plugin needs the upcoming MCP release. Do not guess
-a result, call REST instead, or send a probe message.
+If the `check_numbers` tool is missing, stop and say the installed MCP server
+is too old to check numbers. Do not guess a result, call REST instead, or send
+a probe message.
 
 1. Call status and stop unless state is CONNECTED. On `not_configured`, give
    https://hellohop.app for setup; configure the token and channel ID locally

@@ -8,7 +8,7 @@ HelloHop is not affiliated with WhatsApp or Meta. Link your own number in the co
 ## Release status
 
 This plugin repository is published. Its MCP launch files pin
-`hellohop-mcp@0.3.3`. That release starts without credentials and includes
+`hellohop-mcp@0.3.4`. That release starts without credentials and includes
 `check_numbers`. The check-number command stops if its tool is unavailable.
 
 ## Claude Code
@@ -44,7 +44,7 @@ Set `GATEWAY_API_TOKEN` and `GATEWAY_CHANNEL_ID` locally, then explicitly forwar
 enabled = false
 [mcp_servers.hellohop]
 command = "npx"
-args = ["-y", "hellohop-mcp@0.3.3"]
+args = ["-y", "hellohop-mcp@0.3.4"]
 env_vars = ["GATEWAY_API_TOKEN", "GATEWAY_CHANNEL_ID"]
 ```
 
@@ -59,7 +59,7 @@ env_vars = ["GATEWAY_API_TOKEN", "GATEWAY_CHANNEL_ID", "GATEWAY_ALLOW_SEND"]
 For the MCP server alone, without the bundled skill and commands:
 
 ```sh
-codex mcp add hellohop --env GATEWAY_API_TOKEN=<token> --env GATEWAY_CHANNEL_ID=<channel> -- npx -y hellohop-mcp@0.3.3
+codex mcp add hellohop --env GATEWAY_API_TOKEN=<token> --env GATEWAY_CHANNEL_ID=<channel> -- npx -y hellohop-mcp@0.3.4
 ```
 
 Replace the placeholders locally.
@@ -72,8 +72,8 @@ Claude Code exposes these as `/hellohop:send`, `/hellohop:check-number` and
 - send: checks status and safety, shows the exact recipient and text for approval,
   and sends once. If sending is off, it prints the line to enable it yourself.
 - check-number: checks to ensure numbers are still on WhatsApp, for your own
-  contacts. Requires the upcoming MCP release, an eligible account and a
-  connected non-sandbox channel. Sandbox-only accounts receive 403. Results
+  contacts. Requires an eligible account and a connected non-sandbox
+  channel. Sandbox-only accounts receive 403. Results
   arrive through background jobs; a check can be wrong or out of date.
 - connect: guides you to https://hellohop.app/console to link your phone,
   then watches status for at most 3 minutes. Pairing happens in the console.

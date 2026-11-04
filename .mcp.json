@@ -4,7 +4,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "hellohop-mcp@0.3.3"
+        "hellohop-mcp@0.3.4"
       ],
       "env": {
         "GATEWAY_API_TOKEN": "${user_config.api_token}",
