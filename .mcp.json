@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "hellohop": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hellohop-mcp@0.3.3"
+      ],
+      "env": {
+        "GATEWAY_API_TOKEN": "${user_config.api_token}",
+        "GATEWAY_CHANNEL_ID": "${user_config.channel_id}"
+      }
+    }
+  }
+}

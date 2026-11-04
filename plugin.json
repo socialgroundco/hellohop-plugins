@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hellohop",
+  "version": "1.0.0",
+  "description": "Read and send WhatsApp messages from your agent through HelloHop, an independent WhatsApp API. Sending is off by default.",
+  "author": {
+    "name": "HelloHop",
+    "url": "https://hellohop.app"
+  },
+  "homepage": "https://hellohop.app/docs/mcp",
+  "repository": "https://github.com/socialgroundco/hellohop-plugins",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "messaging",
+    "mcp",
+    "webhooks",
+    "groups"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "HelloHop",
+        "shortDescription": "Read and send WhatsApp messages from your agent",
+        "longDescription": "An independent WhatsApp API for developers, as a skill plus an MCP server. Read-only by default; sending is an explicit opt-in.",
+        "developerName": "HelloHop",
+        "category": "Communication",
+        "websiteURL": "https://hellohop.app"
+      }
+    }
+  }
+}

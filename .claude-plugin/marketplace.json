@@ -1,0 +1,16 @@
+{
+  "name": "hellohop",
+  "description": "HelloHop plugins for Claude Code: read and send WhatsApp messages from your agent.",
+  "owner": {
+    "name": "HelloHop",
+    "url": "https://hellohop.app"
+  },
+  "plugins": [
+    {
+      "name": "hellohop",
+      "source": "./",
+      "description": "Read and send WhatsApp messages from your agent through HelloHop. Sending is off by default.",
+      "category": "communication"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "hellohop",
+  "displayName": "HelloHop",
+  "version": "1.0.0",
+  "description": "Read and send WhatsApp messages from your agent through HelloHop, an independent WhatsApp API. Sending is off by default.",
+  "author": {
+    "name": "HelloHop",
+    "url": "https://hellohop.app"
+  },
+  "homepage": "https://hellohop.app/docs/mcp",
+  "repository": "https://github.com/socialgroundco/hellohop-plugins",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "messaging",
+    "mcp",
+    "webhooks",
+    "groups"
+  ],
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "HelloHop channel token",
+      "description": "Your channel token from the HelloHop console. Get a free sandbox token at hellohop.app.",
+      "sensitive": true,
+      "default": ""
+    },
+    "channel_id": {
+      "type": "string",
+      "title": "HelloHop channel ID",
+      "description": "The channel ID shown next to your token in the HelloHop console.",
+      "default": ""
+    }
+  }
+}
